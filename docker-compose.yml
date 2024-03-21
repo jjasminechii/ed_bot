@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  ed_discohook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ed_discohook
+    restart: unless-stopped
